@@ -28,7 +28,7 @@ Once you have deployed a Web App, regardless if you included App Insights SDK in
 1. Go to the **App Services** pane in the Azure portal.
 2. Navigate to **Settings | Monitoring** pane.
 
-   ![Enable App Insights on App Services portal][appinsights-in-appservices]
+   ![Enable App Insights on App Services portal][./media/app-insights-profiler/AppInsights-AppServices.png]
 
 3. Either follow the instructions on the pane to create a new resource or select an existing App Insights resource to monitor your web all. Accept all default options. The **Code level diagnostics** is by default on and enables Profiler.
 
@@ -242,6 +242,7 @@ Once the profiler finishes running, follow the instructions on notification to g
 ## Next steps
 
 * [Working with Application Insights in Visual Studio](https://docs.microsoft.com/azure/application-insights/app-insights-visual-studio)
+
 [appinsights-in-appservices]:./media/app-insights-profiler/AppInsights-AppServices.png
 [Enablement UI]: ./media/app-insights-profiler/Enablement_UI.png
 [profiler-app-setting]:./media/app-insights-profiler/profiler-app-setting.png
