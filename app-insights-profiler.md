@@ -210,28 +210,28 @@ The following steps illustrates how this scenario works:
 
 ### Step 1: Start a web performance test
 Navigate to Application Insights portal, **Configure | Performance Testing**. Click on New button to start a new performance test.
-    ![create new performance test][create-performance-test]
+![create new performance test][create-performance-test]
 
 In the **New performance test** pane, configure the test target URL. Accept all default settings and start running the load test.
 
-    ![Configure load test][configure-performance-test]
+![Configure load test][configure-performance-test]
 
 You will see the new test is queued first, then soon will be in progress.
 
-    ![load test is submitted and queued][load-test-queued]
+![load test is submitted and queued][load-test-queued]
 
-    ![load test is running in progress][load-test-in-progress]
+![load test is running in progress][load-test-in-progress]
 
 
 ### Step 2: Start profiler on-demand
 Once the load test is running, we can start profiler to capture traces on the web app while it's receiving load.
 Navigate to Configure Profiler pane:
 
-    ![configure profiler pane entry][configure-profiler-entry]
+![configure profiler pane entry][configure-profiler-entry]
 
 On the **Configure Profiler pane**, there is a **Profile Now** button to trigger profiler on all instances of the linked web apps. In addition, you are provided visibility on when profiler was running in the past.
 
-    ![Profiler on-demand][profiler-on-demand]
+![Profiler on-demand][profiler-on-demand]
 
 You will see notification and status change on the profiler run status.
 
