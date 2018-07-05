@@ -239,6 +239,37 @@ You will see notification and status change on the profiler run status.
 
 Once the profiler finishes running, follow the instructions on notification to go to Performance blade and view traces.
 
+### Step 4: Troubleshooting on-demand profiler
+Profiling on-demand is included in the latest Application Insights site extension. If on-demand profiler does not work for you, chances are your web app is still using an older version of the Profiler agent. Follow these steps to check and install latest Profiler:
+
+1. Go to App Services App Settings and check if the following settings are set:
+    * **APPINSIGHTS_INSTRUMENTATIONKEY**: Replace with the proper instrumentation key for application insights.
+    * **APPINSIGHTS_PORTALINFO**: ASP.NET
+    * **APPINSIGHTS_PROFILERFEATURE_VERSION**: 1.0.0
+If any of these settings are not set, go to Application Insights enablement blade to install the latest site extension. That way the latest profiler agent and settings above will be properly configured.
+
+2. Go to Application Insights blade in App Services portal.
+
+    ![Enable Application Insights from App Services portal][enable-app-insights]
+
+3. If you see ‘Update’ button in the following page, click it to update Application Insights site extension which will install the latest Profiler agent.
+![Update site extension][update-site-extension]
+
+4. Then click ‘change’ to making sure the Profiler is turned on and use OK to save the changes.
+
+    ![Change and save app insights][change-and-save-appinsights]
+
+5. Go back to ‘App Settings’ tab for the App Service to double check the following app settings items are set:
+    * **APPINSIGHTS_INSTRUMENTATIONKEY**: Replace with the proper instrumentation key for application insights.
+    * **APPINSIGHTS_PORTALINFO**: ASP.NET
+    * **APPINSIGHTS_PROFILERFEATURE_VERSION**: 1.0.0
+
+    ![app settings for profiler][app-settings-for-profiler]
+
+6. Optionally, check the extension version and making sure there’s no update available.
+
+    ![check for extension update][check-for-extension-update]
+
 ## Next steps
 
 * [Working with Application Insights in Visual Studio](https://docs.microsoft.com/azure/application-insights/app-insights-visual-studio)
@@ -262,3 +293,8 @@ Once the profiler finishes running, follow the instructions on notification to g
 [load-test-in-progress]: ./media/app-insights-profiler/load-test-in-progress.png
 [profiler-on-demand]: ./media/app-insights-profiler/Profiler-on-demand.png
 [configure-profiler-entry]: ./media/app-insights-profiler/configure-profiler-entry.png
+[enable-app-insights]: ./media/app-insights-profiler/enable-app-insights-blade.png
+[update-site-extension]: ./media/app-insights-profiler/update-site-extension.png
+[change-and-save-appinsights]: ./media/app-insights-profiler/change-and-save-appinsights.png
+[app-settings-for-profiler]: ./media/app-insights-profiler/appsettings-for-profiler.png
+[check-for-extension-update]: ./media/app-insights-profiler/check-extension-update.png
