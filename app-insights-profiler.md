@@ -290,7 +290,7 @@ If any of these settings are not set, go to Application Insights enablement blad
 [create-performance-test]: ./media/app-insights-profiler/new-performance-test.png
 [configure-performance-test]: ./media/app-insights-profiler/configure-performance-test.png
 [load-test-queued]: ./media/app-insights-profiler/load-test-queued.png
-[load-test-in-progress]: ./media/app-insights-profiler/load-test-in-progress.png
+[load-test-in-progress]: ./media/app-insights-profiler/load-test-inprogress.png
 [profiler-on-demand]: ./media/app-insights-profiler/Profiler-on-demand.png
 [configure-profiler-entry]: ./media/app-insights-profiler/configure-profiler-entry.png
 [enable-app-insights]: ./media/app-insights-profiler/enable-app-insights-blade.png
