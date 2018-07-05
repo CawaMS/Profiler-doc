@@ -239,7 +239,7 @@ You will see notification and status change on the profiler run status.
 
 Once the profiler finishes running, follow the instructions on notification to go to Performance blade and view traces.
 
-### Step 4: Troubleshooting on-demand profiler
+### Troubleshooting on-demand profiler
 Profiling on-demand is included in the latest Application Insights site extension. If on-demand profiler does not work for you, chances are your web app is still using an older version of the Profiler agent. Follow these steps to check and install latest Profiler:
 
 1. Go to App Services App Settings and check if the following settings are set:
