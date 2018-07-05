@@ -208,7 +208,9 @@ When you configure Profiler, updates are made to the web app's settings. You can
 Profiler can be triggered manually with one button click. Suppose you are running a web performance test. You will need traces to help you understand how your web app is performing under load. Having control over when traces are captured is crucial since you know when load test will be running, but the random sampling interval might miss it.
 The following steps illustrates how this scenario works:
 
-### Step 1: Start a web performance test
+### (Optional) Step 1: Generate traffic to your web app by starting a web performance test
+If your web app already has incoming traffic or if you just want to manually generate traffic, skip this section and proceed to Step 2.
+
 Navigate to Application Insights portal, **Configure | Performance Testing**. Click on New button to start a new performance test.
 ![create new performance test][create-performance-test]
 
