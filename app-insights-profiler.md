@@ -242,7 +242,14 @@ You will see notification and status change on the profiler run status.
 Once the profiler finishes running, follow the instructions on notification to go to Performance blade and view traces.
 
 ### Troubleshooting on-demand profiler
-Profiling on-demand is included in the latest Application Insights site extension. If on-demand profiler does not work for you, chances are your web app is still using an older version of the Profiler agent. Follow these steps to check and install latest Profiler:
+Sometimes you might see Profiler timeout error message after an on-demand session:
+
+![Profiler timeout error][profiler-timeout]
+
+There could be two reasons why you see this error:
+* On-demand profiler session was actually successful, but App Insights took a longer time to process data collected. If data did not finish being processed in 15 minutes, the portal will display timeout message. Though after a while, Profiler traces will show up. If this happens, please just ignore the error message for now. We are actively working on a fix
+
+* Your web app has an older version of Profiler agent that does not have on-demand feature. If you enabled Application Insights Profiler a while ago, chances are you need to update your Profiler agent to start using on-demand capability. Follow these steps to check and install latest Profiler:
 
 1. Go to App Services App Settings and check if the following settings are set:
     * **APPINSIGHTS_INSTRUMENTATIONKEY**: Replace with the proper instrumentation key for application insights.
@@ -300,3 +307,4 @@ If any of these settings are not set, go to Application Insights enablement blad
 [change-and-save-appinsights]: ./media/app-insights-profiler/change-and-save-appinsights.png
 [app-settings-for-profiler]: ./media/app-insights-profiler/appsettings-for-profiler.png
 [check-for-extension-update]: ./media/app-insights-profiler/check-extension-update.png
+[profiler-timeout]: ./media/app-insights-profiler/profiler-timeout.png
